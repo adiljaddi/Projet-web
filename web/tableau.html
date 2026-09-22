@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+	<title>Initiation au développement Web</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="tphtml.css">
+</head>
+
+<body>
+	<header id="header">
+		Initiation au développement Web
+	</header>
+
+	<div class="contenu">
+		<nav>
+			<a href="accueil.html" class="clic">Accueil</a>
+			<a href="bases.html">Les bases du langage HTML</a>
+			<a href="tableau.html">Les tableaux</a>
+			<a href="styles_exercices.html">Les styles CSS : exercices</a>
+			<a href="styles_illustration.html">Les styles CSS : illustration</a>
+			<a href="js_exercices.html">Javascript : exercices</a>
+			<a href="js_ampoule.html">Javascript : l'ampoule</a>
+			<a href="js_planets.html">Javascript : planètes</a>
+			<a href="php_films.html">Exemple PHP : films</a>
+		</nav>
+			
+		<article>
+			<h1>Les tableaux</h1>
+            <h2>Un tableau 3x3</h2>
+            <table bordder="1">
+                <tr>
+                    <td>row 1,col 1</td>
+                    <td>row 1,col 2</td>
+                    <td>row 1,col 3</td>
+                </tr>
+                <tr>
+                    <td>row 2,col 1</td>
+                    <td>row 2,col 2</td>
+                    <td>row 2,col 3</td>
+                </tr>
+                <tr>
+                    <td>row 3,col 1</td>
+                    <td>row 3,col 2</td>
+                    <td>row 3,col 3</td>
+                </tr>
+            </table>
+		
+            <h2>Cellules regroupées sur deux colonnes :</h2>
+            <table border="1">
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th colspan="2">Telephone</th>
+                    </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>Bill Gates</td>
+                    <td>555-1234</td>
+                    <td>555-1235</td>
+                </tr>
+                </tbody>
+               
+            </table>
+
+            <h2>Cellules regroupées sur deux rangées :</h2>
+            <table border="1">
+                    <tr>
+                        <th>First Name</th>
+                        <td>Bill Gates</td>
+                    </tr>
+                    <tr>
+                        <th rowspan="2">Telephone</th>
+                        <td>555-1234</td></tr>
+                        
+                        <tr><td>555-1234</td></tr>
+                    </tr>
+                    
+            </table>
+
+            <h2>Un tableau plus complexe...</h2>
+            <table>
+            <tr>
+              <td colspan="4">Regroupement horizontal de 4 cellules</td>
+            </tr>
+            <tr>
+              <td rowspan="4">Regroupement vertical de 4 cellules</td>
+              <td colspan="2">Deux horizontales</td>
+              <td rowspan="2">Deux verticales</td>
+              
+            </tr>
+            <tr>
+              <td>Une cellule</td>
+              <td>ça vit juste en dessous !</td>
+              
+            </tr>
+            <tr>
+              <td rowspan="2">Encore deux verticales</td>
+              <td><img src="../images/anim_nombre.gif" alt="Animation Nombre" ></td>
+              <td>Une autre cellule</td>
+            </tr>
+            <tr>
+              <td colspan="2">Encore deux horizontales</td>
+            </tr>
+          </table>
+
+        </article>
+	</div>
+	
+	<footer>
+		Copyright 2026-2027   Polytech Lyon 3A Info
+	</footer>
+
+</body>
+</html>
