@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <title>Initiation au développement Web - Todo List</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="style.css">
+        <script src="/web/javascript/index.js" defer></script>
+        <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+
+    </head>
+    <body x-data="todoApp()" :class="{dark: darkMode, dyslexie : dyslexie}">
+        <h1>To Do List</h1>
+        <h2> Préférences</h2>
+        <button @click="toggleTheme()">🌙</button>
+        <button @click="toggleDyslexie()">Dys</button>
+        <h2>Ajouter une tache</h2>
+        <form @submit.prevent="addTask()">
+            <input type="text" x-model="newTask" placeholder="Tâche à ajouter">
+            <button type="submit">Ajouter</button>
+        </form>
+    </body>
+</html>
